@@ -1,4 +1,9 @@
 header {  
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+    /*font-family: 'Jeju Gothic', sans-serif;*/
     height: 75px;
     padding: 1rem;
     color: white;
@@ -17,8 +22,14 @@ header {
     padding: 1rem;
     height: 100%;  
   }
+
+  nav ul li {
+    display: inline-block;
+    position: relative;
+}
   
   body {
+    padding-top: 75px;
     background: #EEE;
   }
   
