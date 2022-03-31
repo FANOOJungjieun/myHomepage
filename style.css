@@ -33,6 +33,11 @@ header {
     position: relative;
     padding : 5px;
 }
+
+  nav ul li:hover {
+    background: rgb(0, 75, 75);
+    color: white;
+  }
   
   body {
     padding-top: 75px;
