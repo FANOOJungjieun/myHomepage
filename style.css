@@ -1,7 +1,9 @@
+
 header {  
   position: fixed;
   top: 0;
   width: 100%;
+  min-width: 630px;
 
     /*font-family: 'Jeju Gothic', sans-serif;*/
     height: 75px;
@@ -32,6 +34,7 @@ header {
   nav a {
     float: left;
     padding : 5px;
+    margin : 10px;
   }
 
   nav a:hover {
@@ -42,6 +45,7 @@ header {
   .dropdown-content{
     display : none;
     position : absolute;
+    left :33%;
     padding : 10px;
     z-index : 1; /*다른 요소들보다 앞에 배치*/
     font-weight: 400;
@@ -59,7 +63,8 @@ header {
   }
 
   .dropdown-content div:hover{
-    background-color : #ececec
+    background-color : #ececec;
+    border-radius: 10px 10px;
   }
   
   .dropdown:hover .dropdown-content {

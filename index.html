@@ -9,10 +9,10 @@
             <h1><a href="index.html">Jieun's Homepage</a></h1>
             <nav>
                 <a href="notice.html">NOTICE</a>
-                <a class="dropdown" href=works.html>
+                <a class="dropdown" style="cursor:pointer;">
                     <span>WORKS</span>
                     <div class="dropdown-content">
-                        <div>work1</div>
+                        <div OnClick="location.href ='works.html'">work1</div>
                         <div>work2</div>
                         <div>work3</div>
                     </div>
@@ -22,6 +22,12 @@
           </header>
           <main>
               this is index page.<br>
+              <p id="window"></p>
+              <script>
+                  var windowWidth = window.innerWidth;
+                  var y = document.getElementById("window");
+                y.innerHTML = "Browser Window: width: " + windowWidth + ".";
+              </script>
           </main>
     </body>
 </html>
