@@ -44,10 +44,22 @@ header {
     position : absolute;
     padding : 10px;
     z-index : 1; /*다른 요소들보다 앞에 배치*/
+    font-weight: 400;
+    background-color: teal;
+    border-radius: 0px 0px 20px 20px;
+    min-width : 100px;
   }
   
-  .dropdown-content a{
+  .dropdown-content div{
     display : block;
+    text-decoration : none;
+    font-size: 12px;
+    color : rgb(50, 53, 51);
+    padding : 12px 20px;
+  }
+
+  .dropdown-content div:hover{
+    background-color : #ececec
   }
   
   .dropdown:hover .dropdown-content {
