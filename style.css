@@ -29,12 +29,12 @@ header {
     padding : 10px;
   }
 
-  nav div {
+  nav a {
     float: left;
     padding : 5px;
   }
 
-  nav :hover {
+  nav a:hover {
     /*background: rgb(0, 75, 75);*/
     color: rgb(0, 60, 60);
   }
