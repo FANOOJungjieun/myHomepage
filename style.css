@@ -3,7 +3,6 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  min-width: 630px;
 
     /*font-family: 'Jeju Gothic', sans-serif;*/
     height: 75px;
@@ -83,6 +82,12 @@ header {
   main {
     padding: 1rem;
     height: 100%;  
+  }
+
+  @media (max-width: 630px) {
+    header {
+      font-size: 11px;
+    }
   }
   
   * {
