@@ -1,0 +1,4 @@
+*nest task
+- php include를 사용해 header분리
+- position fix를 응용해 리모컨 기능 구현->js로 확대
+- node.js를 사용한 동적 웹사이트로 변환
