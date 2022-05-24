@@ -1,26 +1,40 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
 <html>
     <head>
         <title>My Home Page</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <h1><a href="index.html">Jieun's Homepage</a></h1>
-            <nav>
-                <a href="notice.html">NOTICE</a>
-                <a class="dropdown" style="cursor:pointer;">
-                    <span>WORKS</span>
-                    <div class="dropdown-content">
-                        <div OnClick="location.href ='works.html'">work1</div>
-                        <div>work2</div>
-                        <div>work3</div>
-                    </div>
-                </a>
-                <a href=address.html>ADDRESS</a>
-            </nav>
-          </header>
+        <!-- nav section -->
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="#home" id="nav_logo">JIEUN</a>
+                <div class="nav_toggle" id="mobile_menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="#home" class="nav_links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#notice" class="nav_links" id="notice-page">Notice</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#works" class="nav_links" id="works-page">Works</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#address" class="nav_links" id="address-page">Address</a>
+                    </li>
+                    <li class="navbar_btn">
+                        <a href="#sign-up" class="button" id="signup">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
           <main>
               this is index page.<br>
               <p id="window"></p>
@@ -32,9 +46,8 @@
               <br>
               *nest task<br>
               - php include를 사용해 header분리<br>
-              - position fix를 응용해 리모컨 기능 구현->js로 확대<br>
-              - node.js를 사용한 동적 웹사이트로 변환
+              - go to top 기능 구현->js<br>
+              
           </main>
-          <div id="floating"><ul>top</ul></div>
     </body>
 </html>
