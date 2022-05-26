@@ -33,20 +33,30 @@
                 </ul>
             </div>
         </nav>
-        <script src="app.js"></script>
-          <main>
-              this is index page.<br>
-              <p id="window"></p>
-              <script>
-                  var windowWidth = window.innerWidth;
-                  var y = document.getElementById("window");
-                y.innerHTML = "Browser Window: width: " + windowWidth + ".";
-              </script>
-              <br>
-              *nest task<br>
-              - php include를 사용해 header분리<br>
-              - go to top 기능 구현->js<br>
-              
-          </main>
+        <!-- main section  -->
+        <div class="hero" id="home">
+            <div class="hero_container">
+                <h1 class="hero_heading">This is <span>Index</span> Page.</h1>
+                <p class="hero_description">환영합니다!</p>
+                <button class="main_btn"><a href="#">Go to Notice</a></button>
+            </div>
+        </div>
+
+        <!--Notice section-->
+
+        <div class="main" id="notice">
+            <div class="main_container">
+                <div class="main_img-container">
+                    <div class="main_img-card">ICON</div>
+                </div>
+                <div class="main_content">
+                    <h1>What do we do?</h1>
+                    <h2>Static homepage to backup my portfolio</h2>
+                    <p>HTML과 CSS, JS를 사용해 모바일 환경에 대응하는 정적 홈페이지 구현</p>
+                    <button class="main_btn"><a href="#">Go to works</a></button>
+                </div>
+            </div>
+        </div>
+          <script src="app.js"></script>
     </body>
 </html>
