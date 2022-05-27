@@ -5,6 +5,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+        />
     </head>
     <body>
         <!-- nav section -->
@@ -27,9 +31,11 @@
                     <li class="navbar_item">
                         <a href="#address" class="nav_links" id="address-page">Address</a>
                     </li>
+                    <!--
                     <li class="navbar_btn">
                         <a href="#sign-up" class="button" id="signup">Sign up</a>
                     </li>
+                -->
                 </ul>
             </div>
         </nav>
@@ -37,8 +43,8 @@
         <div class="hero" id="home">
             <div class="hero_container">
                 <h1 class="hero_heading">This is <span>Index</span> Page.</h1>
-                <p class="hero_description">환영합니다!</p>
-                <button class="main_btn"><a href="#">Go to Notice</a></button>
+                <p class="hero_description">좋은 개발자는 노력으로 이루어져 있다.</p>
+                <button class="main_btn"><a href="#notice">Go to Notice</a></button>
             </div>
         </div>
 
@@ -47,13 +53,66 @@
         <div class="main" id="notice">
             <div class="main_container">
                 <div class="main_img-container">
-                    <div class="main_img-card">ICON</div>
+                    <div class="main_img-card"><i class="fas fa-layer-group"></i></div>
                 </div>
                 <div class="main_content">
                     <h1>What do we do?</h1>
                     <h2>Static homepage to backup my portfolio</h2>
-                    <p>HTML과 CSS, JS를 사용해 모바일 환경에 대응하는 정적 홈페이지 구현</p>
-                    <button class="main_btn"><a href="#">Go to works</a></button>
+                    <p>포트폴리오 소개를 위한 홈페이지</p>
+                    <button class="main_btn"><a href="#works">Go to works</a></button>
+                </div>
+            </div>
+        </div>
+        <!--works section-->
+
+        <div class="works" id="works">
+            <h1>My Works</h1>
+            <div class="works_wrapper">
+                <div class="works_card">
+                    <h2>My Home Page</h2>
+                    <p>HTML, CSS, js, github를 사용해 모바일 환경에 대응하는 정적 홈페이지를 구현하고 deploy.</p>
+                    <div class="works_btn"><button onclick="window.open('https://github.com/FANOOJungjieun/myHomepage')">Go to Github</button></div>
+                </div>
+
+                <div class="works_card">
+                    <h2>Twitter bot API</h2>
+                    <p>Python, AWS를 사용해 트위터 자동봇 API를 만들고, AWS 서버로 deploy.</p>
+                    <div class="works_btn"><button>Go to Github</button></div>
+                </div>
+
+                <div class="works_card">
+                    <h2>now study</h2>
+                    <p>nodejs 공부 코드 백업</p>
+                    <div class="works_btn"><button>Go to Github</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!--address section-->
+
+        <div class="main" id="address">
+            <div class="main_container">
+                <div class="main_content">
+                    <h1>Address</h1>
+                    <h2>Static homepage to backup my portfolio</h2>
+                    <p>email : homil9876@gmail.com</p>
+                    <button class="main_btn"><a href="#">Go to Top</a></button>
+                </div>
+                <div class="main_img-container">
+                    <div class="main_img-card" id="card-2"><i class="fas fa-users"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer section-->
+
+        <div class="footer_container">
+            <div class="footer_links">
+                <div class="footer_link-wrapper">
+                    <div class="footer_link-items">
+                        <h2>About Me</h2>
+                        <a href="/address"></a>
+                    </div>
                 </div>
             </div>
         </div>
