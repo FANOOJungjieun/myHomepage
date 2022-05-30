@@ -226,7 +226,7 @@
 }
 
 .highlight {
-  border-bottom: 4px solid #093637;
+  border-bottom: 4px solid rgb(1, 59, 59);
 }
 
 @media screen and (max_width:768px) {
@@ -509,6 +509,3 @@
   }
 }
 
-
-/*footer css*/
-  
